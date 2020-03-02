@@ -12,8 +12,7 @@ namespace Lockstep.FakeServer{
             //let async functions call in this thread  
             OneThreadSynchronizationContext contex = new OneThreadSynchronizationContext();
             SynchronizationContext.SetSynchronizationContext(contex);
-            Debug.Log("Main start");
-            Utils.StartServices();
+            Debug.Log("Mian start");
             try {
                 DoAwake();
                 while (true) {
